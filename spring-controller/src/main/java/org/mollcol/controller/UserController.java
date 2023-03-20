@@ -25,6 +25,7 @@ public class UserController {
     public user test(@RequestParam String  user) {
         logger.info("请求参数{}",user);
       user user1 = userService.selectById(user);
+        System.out.println("haode");
       return  user1;
     }
 }
