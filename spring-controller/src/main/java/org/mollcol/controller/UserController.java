@@ -24,7 +24,7 @@ public class UserController {
     @ResponseBody
     public user test(@RequestParam String user) {
         logger.info("请求参数{}", user);
-        user user1 = userService.selectById(user);
-        return user1;
+        user result = userService.selectById(user);
+        return result;
     }
 }
